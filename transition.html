@@ -1,0 +1,120 @@
+Transition -> CSS transition allows you to change property values smoothly (from one value to another), over a given duration
+
+Transition Duration
+
+    div {
+        -webkit-transition-property: width;
+        -moz-transition-property: width;
+        -o-transition-property: width;
+        transition-property: width;
+
+        -webkit-transition-duration: 2s;
+        -moz-transition-duration: 2s;
+        -o-transition-duration: 2s;
+        transition-duration: 2s;
+
+    }
+
+Transition Timing Function : 
+- Specifies the speed curve of the transition effect
+- Syntax :
+    transition-timing-function : ease | linear | ease-in | ease-out | ease-in-out | cubic-bezier() | inital | inherit
+- Use :
+    div {
+        -moz-transition-timing-function: linear;
+        -o-transition-timing-function: linear;
+        -webkit-transition-timing-function: linear
+        transition-timing-function: linear;
+    }
+
+Transition Delay :
+- Specifies a delay (in seconds) for the transition effect
+- Syntax : 
+    transition-delay : time | inherit | inital
+- Use : 
+    div {
+        -moz-transition-delay: 2s;
+        -o-transition-delay: 2s;
+        -webkit-transition-delay: 2s;
+        transition-delay: 2s;
+    }
+
+CSS Animation
+
+Keyframes : 
+- When you specify CSS styles inside the @keyframes rule, the animation will gradually change from the current style to the new style at certain times.
+- To get an animation to work, you must bind the animation to an element.
+
+- Syntax : 
+@keyframes animationname {
+    keyframes-selector1{
+        css-styles;
+    }
+    keyframes-selector2{
+        css-styles;
+    }
+    ...
+}
+
+Animation Name
+- Specify the name of the @keyframes animation
+- Syntax :
+    animation-name : keyframesname | none | inital | inherit
+- Use : 
+    @keyframes myanimations {
+        .....
+    }
+    div {
+        -webkit-animation-name : myanimation;
+        animation-name : myanimation;
+    }
+
+Animation Duration : 
+- Specifies how many seconds or milliseconds an animation takes to complete one cycle
+- Syntax 
+    animation-duration : time | inherit | inital;
+- Use 
+    div {
+        -webkit-animation-duration : 2s; /* Chrome, Safari,Opera */
+        animation-duration : 2s; 
+    }
+
+Animation Iteration Count : 
+- Specifies the number of times an animation should be played
+- Syntax:
+    animation-iteration-count :number | inherit | inital | infinite; 
+- Use :
+    div {
+        -webkit-animation-iteration-count : 3; /* Chrome, Safari,Opera */
+        animation-iteration-count : 3;
+    }
+
+Animation Timing Function : 
+- Specifies the speed curve of the animation
+- Syntax :
+    animation-timing-function : linear | ease | ease-in | ease-out | cubic-bezier(n,n,n,n) | initial | inherit;
+- Use :
+    div {
+        -webkit-animation-timing-function: linear; /* Chrome, Safari,Opera */
+        animation-timing-function : linear
+    }
+
+Animation Delay : 
+- Specify a delay for the start of the animation
+- Syntax :
+    animation-delay : time | inital | inherit;
+- Use :
+    div {
+        -webkit-animation-delay : 2s;  /* Chrome, Safari,Opera */
+        animation-delay : 2s; 
+    }
+    
+Animation Direction : 
+- Specify wether an animation should play in reverse direction or alternate cycles
+- Syntax :
+    animation-direction : normal | reverse | alternate | alternate-reverse | inherit | inital;
+- Use :
+    div {
+        -webkit-animation-direction : alternate;  /* Chrome, Safari,Opera */
+        animation-direction : alternate; 
+    }
